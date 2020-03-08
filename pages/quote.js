@@ -21,7 +21,7 @@ export default function Quote() {
   }
 
   if (error) {
-    quote = "Failed tp fetch the quote.";
+    quote = "Failed to fetch the quote.";
   }
 
   return (
