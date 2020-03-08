@@ -54,10 +54,12 @@ And here's the content.
         `}
         />
       </div>
-      <main className="center">
-        <div className="quote">{quote}</div>
-        {author && <span className="author">- {author}</span>}
-      </main>
+      {quote && author && (
+        <main className="center">
+          <div className="quote">{quote}</div>
+          {author && <span className="author">- {author}</span>}
+        </main>
+      )}
       <style jsx>{`
         h1,
         a {
