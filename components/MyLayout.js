@@ -1,0 +1,25 @@
+import Header from "./Header";
+
+const layoutStyle = {
+  margin: 20,
+  padding: 20,
+  border: "1px solid #DDD"
+};
+
+const Layout = props => {
+  return (
+    <div style={layoutStyle}>
+      <Header />
+      {props.children}
+      <style jsx>
+        {`
+          a :global() {
+            color: green;
+          }
+        `}
+      </style>
+    </div>
+  );
+};
+
+export default Layout;
